@@ -21,15 +21,3 @@ resource "aws_internet_gateway" "igw" {
     "Provisioner" = "tf"
   }
 }
-
-module "per_az" {
-  source = "../module-aws-per_az"
-
-  provider_region = "${var.provider_region}"
-  vpc_id = "${aws_vpc.vpc.id}"
-
-  az_count = "${var.az_count}"
-  az_names = "${var.az_names}"
-
-  nat_cidrs = "${var.nat_cidrs}"
-}
