@@ -13,7 +13,3 @@ output "vpc_cidr" {
 output "igw_id" {
   value = "${aws_internet_gateway.igw.id}"
 }
-
-output "az_names" {
-  value = "${var.az_names}"
-}
