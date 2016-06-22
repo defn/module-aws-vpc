@@ -29,7 +29,7 @@ output "vpc_id" {
 }
 
 output "vpc_cidr" {
-  value = "${aws_vpc.vpc.cidr}"
+  value = "${var.vpc_cidr}"
 }
 
 output "igw_id" {
