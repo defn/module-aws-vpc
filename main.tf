@@ -52,3 +52,7 @@ output "vpc_cidr" {
 output "igw_id" {
   value = "${aws_internet_gateway.igw.id}"
 }
+
+output "zone_id" {
+  value = "${aws_route53_zone.zone.zone_id}"
+}
