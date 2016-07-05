@@ -33,6 +33,10 @@ resource "aws_route53_zone" "zone" {
   }
 }
 
+output "igw" {
+  value = "${aws_internet_gateway.igw.id}"
+}
+
 output "vpc_zone" {
   value = "${var.vpc_zone}"
 }
